@@ -1,7 +1,8 @@
 import ReactMarkdown from 'react-markdown';
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
+// import fs from 'fs';
+// import path from 'path';
+// import matter from 'gray-matter';
+import { allBlogPosts } from './blog-data'; // 导入捆绑的数据
 
 // 博客文章类型定义
 export interface BlogPost {
@@ -17,37 +18,16 @@ export interface BlogPost {
 
 // 获取所有博客文章
 export async function getAllPosts(): Promise<BlogPost[]> {
-  const contentDirectory = path.join(process.cwd(), 'content/blog');
-  const files = fs.readdirSync(contentDirectory);
-  const posts = files
-    .filter(file => file.endsWith('.md'))
-    .map(file => {
-      const slug = file.replace(/\.md$/, '');
-      const fullPath = path.join(contentDirectory, file);
-      const fileContents = fs.readFileSync(fullPath, 'utf8');
-      const { data, content } = matter(fileContents);
-      
-      return {
-        slug,
-        frontMatter: {
-          title: data.title,
-          date: data.date,
-          description: data.description,
-          tags: data.tags
-        },
-        content
-      };
-    });
-  
-  return posts.sort((a, b) => {
-    return new Date(b.frontMatter.date).getTime() - new Date(a.frontMatter.date).getTime();
-  });
+  // 直接返回导入的数据
+  // 注意：allBlogPosts 已经是排序好的
+  return allBlogPosts;
 }
 
 // 根据 slug 获取单个博客文章
 export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
-  const posts = await getAllPosts();
-  return posts.find(post => post.slug === slug) || null;
+  // 在导入的数据中查找
+  const post = allBlogPosts.find(post => post.slug === slug);
+  return post || null;
 }
 
 // 渲染 Markdown 内容
