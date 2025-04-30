@@ -19,12 +19,12 @@ export interface BlogPost {
 export async function getAllPosts(): Promise<BlogPost[]> {
   if (process.env.NODE_ENV === 'development') {
     // 开发环境：直接从文件系统读取
-    const contentDirectory = path.join(process.cwd(), 'src/mdx-content');
+    const contentDirectory = path.join(process.cwd(), 'content/blog');
     const files = fs.readdirSync(contentDirectory);
     const posts = files
-      .filter(file => file.endsWith('.mdx'))
+      .filter(file => file.endsWith('.md'))
       .map(file => {
-        const slug = file.replace(/\.mdx$/, '');
+        const slug = file.replace(/\.md$/, '');
         const fullPath = path.join(contentDirectory, file);
         const fileContents = fs.readFileSync(fullPath, 'utf8');
         const { data, content } = matter(fileContents);
@@ -45,11 +45,11 @@ export async function getAllPosts(): Promise<BlogPost[]> {
       return new Date(b.frontMatter.date).getTime() - new Date(a.frontMatter.date).getTime();
     });
   } else {
-    // 生产环境：从 JSON 文件加载
+    // 生产环境：从 JSON 文件读取
     try {
-      const response = await fetch('/blog-data.json');
-      const blogData: BlogPost[] = await response.json();
-      return blogData;
+      const jsonPath = path.join(process.cwd(), 'public/blog-data.json');
+      const jsonContent = fs.readFileSync(jsonPath, 'utf8');
+      return JSON.parse(jsonContent);
     } catch (error) {
       console.error('Failed to load blog data:', error);
       return [];

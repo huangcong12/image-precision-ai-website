@@ -6,28 +6,17 @@ import matter from 'gray-matter';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const contentDirectory = path.join(process.cwd(), 'src/mdx-content');
+const contentDirectory = path.join(process.cwd(), 'content/blog');
 const outputPath = path.join(process.cwd(), 'public/blog-data.json');
-
-interface BlogPost {
-  slug: string;
-  frontMatter: {
-    title: string;
-    date: string;
-    description: string;
-    tags?: string[];
-  };
-  content: string;
-}
 
 function generateBlogContent() {
   try {
-    // 读取所有 MDX 文件
+    // 读取所有 MD 文件
     const files = fs.readdirSync(contentDirectory);
     const posts = files
-      .filter(file => file.endsWith('.mdx'))
+      .filter(file => file.endsWith('.md'))
       .map(file => {
-        const slug = file.replace(/\.mdx$/, '');
+        const slug = file.replace(/\.md$/, '');
         const fullPath = path.join(contentDirectory, file);
         const fileContents = fs.readFileSync(fullPath, 'utf8');
         const { data, content } = matter(fileContents);
