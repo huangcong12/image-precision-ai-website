@@ -1,19 +1,20 @@
 import { notFound } from 'next/navigation';
 import { format } from 'date-fns';
-import { getPostBySlug, renderMarkdown, getAllPosts } from '@/lib/blog';
+import ReactMarkdown from 'react-markdown';
+import { getPostBySlug, getAllPosts } from '@/lib/blog';
 
 // Generate static paths
-export function generateStaticParams() {
-  const posts = getAllPosts();
+export async function generateStaticParams() {
+  const posts = await getAllPosts();
   return posts.map(post => ({
     slug: post.slug
   }));
 }
 
 // Generate metadata
-export function generateMetadata({ params }: { params: { slug: string } }) {
+export async function generateMetadata({ params }: { params: { slug: string } }) {
   const { slug } = params;
-  const post = getPostBySlug(slug);
+  const post = await getPostBySlug(slug);
   
   if (!post) {
     return {
@@ -29,15 +30,13 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   };
 }
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
+export default async function BlogPostPage({ params }: { params: { slug: string } }) {
   const { slug } = params;
-  const post = getPostBySlug(slug);
+  const post = await getPostBySlug(slug);
   
   if (!post) {
     notFound();
   }
-  
-  const contentHtml = renderMarkdown(post.content);
   
   return (
     <article className="container mx-auto px-4 py-12 max-w-3xl">
@@ -59,10 +58,9 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         )}
       </div>
       
-      <div 
-        className="prose prose-lg max-w-none"
-        dangerouslySetInnerHTML={{ __html: contentHtml }} 
-      />
+      <div className="prose prose-lg max-w-none">
+        <ReactMarkdown>{post.content}</ReactMarkdown>
+      </div>
     </article>
   );
 } 

@@ -2,9 +2,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { getAllPosts } from '@/lib/blog';
 
-export default function Home() {
+export default async function Home() {
   // Get latest 3 blog posts
-  const latestPosts = getAllPosts().slice(0, 3);
+  const posts = await getAllPosts();
+  const latestPosts = posts.slice(0, 3);
 
   return (
     <div>
