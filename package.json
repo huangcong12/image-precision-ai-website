@@ -1,5 +1,6 @@
 {
   "name": "image-precision-ai-website",
+  "type": "module",
   "description": "Build a full-stack web application with Next.js.",
   "cloudflare": {
     "label": "Next.js Framework Starter",
@@ -37,12 +38,12 @@
     "wrangler": "4.12.0"
   },
   "scripts": {
-    "prebuild": "ts-node scripts/generate-blog-content.ts",
+    "prebuild": "node --loader ts-node/esm scripts/generate-blog-content.ts",
     "build": "next build",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts",
     "check": "opennextjs-cloudflare build && tsc && wrangler deploy --dry-run",
     "deploy": "npm run prebuild && opennextjs-cloudflare build && wrangler deploy",
-    "dev": "node scripts/generate-blog-json.js && next dev",
+    "dev": "node --loader ts-node/esm scripts/generate-blog-content.ts && next dev",
     "lint": "next lint",
     "preview": "npm run prebuild && opennextjs-cloudflare build && wrangler dev",
     "start": "next start"

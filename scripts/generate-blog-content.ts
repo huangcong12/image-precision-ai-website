@@ -1,6 +1,10 @@
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
 import matter from 'gray-matter';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const contentDirectory = path.join(process.cwd(), 'src/mdx-content');
 const outputPath = path.join(process.cwd(), 'public/blog-data.json');
