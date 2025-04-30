@@ -1,60 +1,78 @@
-# Next.js Framework Starter
+# PhotoFixer & BG Remover Official Website
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/templates/tree/main/image-precision-ai-website)
+This is the official website for the [PhotoFixer & BG Remover](https://apps.shopify.com/photofixer-bg-remover) Shopify app. The website is built with Next.js and Tailwind CSS, and deployed on Cloudflare Pages.
 
-<!-- dash-content-start -->
+## Features
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). It's deployed on Cloudflare Workers as a [static website](https://developers.cloudflare.com/workers/static-assets/).
+- Responsive design
+- Markdown-based blog system for SEO
+- Tailwind CSS with Typography plugin for rich text styling
+- Next.js App Router architecture
 
-<!-- dash-content-end -->
+## Quick Start
 
-Outside of this repo, you can start a new project with this template using [C3](https://developers.cloudflare.com/pages/get-started/c3/) (the `create-cloudflare` CLI):
-
-```bash
-npm create cloudflare@latest -- --template=cloudflare/templates/image-precision-ai-website
-```
-
-A live public deployment of this template is available at [https://image-precision-ai-website.templates.workers.dev](https://image-precision-ai-website.templates.workers.dev)
-
-## Getting Started
-
-First, run:
+First, install dependencies:
 
 ```bash
 npm install
-# or
-yarn install
-# or
-pnpm install
-# or
-bun install
 ```
 
-Then run the development server (using the package manager of your choice):
+Then, run the development server:
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Blog Publishing Guide
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This website uses a file-system based Markdown blog. Adding new blog posts is simple:
 
-## Deploying To Production
+1. Create a new `.md` file in the `content/blog` directory
+2. The filename will become the URL of the blog post (e.g., `my-new-post.md` will become `/blog/my-new-post`)
+3. Add frontmatter metadata at the top of the file in the following format:
 
-| Command           | Action                                       |
-| :---------------- | :------------------------------------------- |
-| `npm run build`   | Build your production site                   |
-| `npm run preview` | Preview your build locally, before deploying |
-| `npm run deploy`  | Deploy your production site to Cloudflare    |
+```markdown
+---
+title: "Blog Post Title"
+date: "2023-10-15"
+description: "A short description of the blog post that will appear in blog lists"
+tags: ["tag1", "tag2", "tag3"]
+---
 
-## Learn More
+Your blog content here, in Markdown format...
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Required Frontmatter Fields
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `title`: The title of the blog post
+- `date`: Publication date in "YYYY-MM-DD" format
+- `description`: A short description that will appear in blog lists and preview cards
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Optional Frontmatter Fields
+
+- `tags`: An array of tags for categorizing and filtering articles
+
+## Deployment
+
+The project is configured to deploy using Cloudflare Pages:
+
+```bash
+npm run deploy
+```
+
+## Project Structure
+
+- `content/blog/` - All Markdown blog posts
+- `src/app/` - Next.js app routes and pages
+- `src/components/` - React components
+- `src/lib/` - Utility functions and APIs
+
+## Technology Stack
+
+- [Next.js](https://nextjs.org/) - React framework
+- [Tailwind CSS](https://tailwindcss.com/) - CSS framework
+- [gray-matter](https://github.com/jonschlinkert/gray-matter) - Parse Markdown frontmatter
+- [markdown-it](https://github.com/markdown-it/markdown-it) - Markdown parser
+- [date-fns](https://date-fns.org/) - Date utility library
