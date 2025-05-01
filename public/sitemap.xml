@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- 主页 -->
   <url>
-    <loc>https://photofixer.app/</loc>
+    <loc>https://ai-img.litacat.com/</loc>
     <lastmod>2025-05-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -10,7 +10,7 @@
   
   <!-- 功能页面 -->
   <url>
-    <loc>https://photofixer.app/features</loc>
+    <loc>https://ai-img.litacat.com/features</loc>
     <lastmod>2025-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -18,7 +18,7 @@
   
   <!-- 价格页面 -->
   <url>
-    <loc>https://photofixer.app/pricing</loc>
+    <loc>https://ai-img.litacat.com/pricing</loc>
     <lastmod>2025-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -26,7 +26,7 @@
   
   <!-- 博客主页 -->
   <url>
-    <loc>https://photofixer.app/blog</loc>
+    <loc>https://ai-img.litacat.com/blog</loc>
     <lastmod>2025-05-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -34,28 +34,28 @@
   
   <!-- 博客文章 -->
   <url>
-    <loc>https://photofixer.app/blog/optimize-shopify-product-images</loc>
+    <loc>https://ai-img.litacat.com/blog/optimize-shopify-product-images</loc>
     <lastmod>2023-10-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://photofixer.app/blog/ai-background-removal-shopify</loc>
+    <loc>https://ai-img.litacat.com/blog/ai-background-removal-shopify</loc>
     <lastmod>2025-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://photofixer.app/blog/ai-image-enhancement-shopify</loc>
+    <loc>https://ai-img.litacat.com/blog/ai-image-enhancement-shopify</loc>
     <lastmod>2025-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://photofixer.app/blog/bulk-image-processing-shopify</loc>
+    <loc>https://ai-img.litacat.com/blog/bulk-image-processing-shopify</loc>
     <lastmod>2025-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
