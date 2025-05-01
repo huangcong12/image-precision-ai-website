@@ -42,5 +42,3 @@ next-env.d.ts
 .wrangler
 .dev.vars
 /.idea
-/public/blog-data.json
-/src/lib/blog-data.js
