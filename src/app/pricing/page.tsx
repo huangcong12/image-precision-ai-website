@@ -65,7 +65,7 @@ export default function PricingPage() {
           
           <div className="bg-gray-50 p-8 text-center">
             <a
-              href="https://apps.shopify.com/photofixer-bg-remover"
+              href="https://apps.shopify.com/image-precision-ai"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-blue-600 text-white hover:bg-blue-700 font-bold py-3 px-8 rounded-lg"

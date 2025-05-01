@@ -38,7 +38,7 @@ export default function Navbar() {
           </div>
           <div className="hidden sm:ml-6 sm:flex sm:items-center">
             <a 
-              href="https://apps.shopify.com/photofixer-bg-remover" 
+              href="https://apps.shopify.com/image-precision-ai" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700"

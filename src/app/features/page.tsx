@@ -87,7 +87,7 @@ export default function FeaturesPage() {
       <div className="mt-16 text-center">
         <h2 className="text-2xl font-bold mb-4">Ready to enhance your product images?</h2>
         <a
-          href="https://apps.shopify.com/photofixer-bg-remover"
+          href="https://apps.shopify.com/image-precision-ai"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-blue-600 text-white hover:bg-blue-700 font-bold py-3 px-6 rounded-lg mt-4"

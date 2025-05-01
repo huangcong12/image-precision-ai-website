@@ -1,6 +1,6 @@
 # PhotoFixer & BG Remover Official Website
 
-This is the official website for the [PhotoFixer & BG Remover](https://apps.shopify.com/photofixer-bg-remover) Shopify app. The website is built with Next.js and Tailwind CSS, and deployed on Cloudflare Pages.
+This is the official website for the [PhotoFixer & BG Remover](https://apps.shopify.com/image-precision-ai) Shopify app. The website is built with Next.js and Tailwind CSS, and deployed on Cloudflare Pages.
 
 ## Features
 
