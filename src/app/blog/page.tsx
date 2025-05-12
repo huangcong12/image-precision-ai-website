@@ -1,6 +1,18 @@
 import Link from 'next/link';
 import { format } from 'date-fns';
 import {getAllPosts} from "@/app/lib/blog";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'PhotoFixer Blog - AI Image Enhancement for Shopify',
+  description: 'Expert tips and guides on using AI to enhance your Shopify product images and boost conversion rates.',
+  keywords: 'shopify image enhancement, product photo AI, shopify photography tips, ecommerce image optimization',
+};
+
+export async function generateStaticParams() {
+  return [];
+}
+
 export default function BlogPage() {
   const posts = getAllPosts();
   

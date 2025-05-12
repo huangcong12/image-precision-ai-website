@@ -1,6 +1,43 @@
 import {notFound} from 'next/navigation';
 import {format} from 'date-fns';
-import {getPostBySlug, renderMarkdown} from '@/app/lib/blog';
+import {getPostBySlug, renderMarkdown, getAllPosts} from '@/app/lib/blog';
+import { Metadata } from 'next';
+
+type Props = {
+    params: { slug: string }
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const post = getPostBySlug(params.slug);
+    
+    if (!post) {
+        return {
+            title: 'Post Not Found',
+            description: 'The requested blog post could not be found.'
+        };
+    }
+    
+    return {
+        title: `${post.frontMatter.title} | PhotoFixer Blog`,
+        description: post.frontMatter.description,
+        keywords: post.frontMatter.tags?.join(', '),
+        openGraph: {
+            title: post.frontMatter.title,
+            description: post.frontMatter.description,
+            type: 'article',
+            publishedTime: post.frontMatter.date,
+            tags: post.frontMatter.tags
+        }
+    };
+}
+
+export async function generateStaticParams() {
+    const posts = getAllPosts();
+    
+    return posts.map((post) => ({
+        slug: post.slug,
+    }));
+}
 
 export default async function BlogPostPage({params}: { params: { slug: string } }) {
     const post = getPostBySlug(params.slug);
