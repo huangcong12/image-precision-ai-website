@@ -40,14 +40,14 @@ function generateSitemap() {
   <url>
     <loc>${WEBSITE_URL}/features</loc>
     <lastmod>${new Date().toISOString()}</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <!-- pricing -->
   <url>
     <loc>${WEBSITE_URL}/pricing</loc>
     <lastmod>${new Date().toISOString()}</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   
@@ -55,7 +55,7 @@ function generateSitemap() {
   <url>
     <loc>${WEBSITE_URL}/blog</loc>
     <lastmod>${new Date().toISOString()}</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   

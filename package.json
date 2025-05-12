@@ -47,7 +47,7 @@
     "wrangler": "4.12.0"
   },
   "scripts": {
-    "build": "node --experimental-modules scripts/bundle-blog-content.js && npm run generate-sitemap && next build",
+    "build": "npm run generate-sitemap && next build",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts",
     "check": "npm run build && tsc && wrangler deploy --dry-run",
     "deploy": "npm run build && opennextjs-cloudflare build && wrangler deploy",
