@@ -76,9 +76,9 @@ Convert between file formats (JPG, PNG, WebP) in bulk to optimize for different 
 
 Add consistent alt text, file naming, and image metadata across your product catalog for better SEO and organization.
 
-## Implementing Bulk Processing with PhotoFixer & BG Remover
+## Implementing Bulk Processing with AI Product Image Enhancer - LC
 
-PhotoFixer & BG Remover offers Shopify merchants powerful bulk processing capabilities:
+AI Product Image Enhancer - LC offers Shopify merchants powerful bulk processing capabilities:
 
 1. **Multi-select processing** - Select multiple images and apply the same enhancements simultaneously
 2. **Preset application** - Save your favorite enhancement settings and apply them consistently across images
@@ -117,6 +117,6 @@ After implementing bulk processing, track these metrics:
 
 In today's competitive e-commerce landscape, operational efficiency can be as important as marketing strategy. Bulk image processing represents one of the most significant time-saving opportunities for Shopify merchants, freeing up valuable hours while simultaneously improving product presentation.
 
-By implementing bulk processing through tools like PhotoFixer & BG Remover, merchants can transform what was once a tedious, time-consuming task into a quick, efficient process. This efficiency not only saves time but also ensures a level of visual consistency that enhances brand perception and customer experience.
+By implementing bulk processing through tools like AI Product Image Enhancer - LC, merchants can transform what was once a tedious, time-consuming task into a quick, efficient process. This efficiency not only saves time but also ensures a level of visual consistency that enhances brand perception and customer experience.
 
 Reclaim your time and improve your product presentation by implementing bulk image processing in your Shopify workflow today!

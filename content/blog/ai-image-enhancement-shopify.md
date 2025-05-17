@@ -53,7 +53,7 @@ High-quality images perform better when shared on social media or listed on mark
 
 ## Implementing AI Image Enhancement with PhotoFixer
 
-PhotoFixer & BG Remover offers Shopify merchants a simple solution for professional image enhancement:
+AI Product Image Enhancer - LC offers Shopify merchants a simple solution for professional image enhancement:
 
 1. **One-click enhancement** - Transform low-quality images instantly
 2. **Batch processing** - Enhance your entire product catalog efficiently
@@ -94,6 +94,6 @@ Track these metrics to measure the impact of your enhanced images:
 
 In the competitive Shopify ecosystem, professional product images are no longer optional—they're essential for success. AI image enhancement technology has democratized access to professional-quality product photography, allowing merchants of all sizes to present their products in the best possible light.
 
-By implementing AI image enhancement through tools like PhotoFixer & BG Remover, Shopify merchants can significantly improve their visual merchandising, leading to higher conversion rates, stronger brand perception, and ultimately, increased sales.
+By implementing AI image enhancement through tools like AI Product Image Enhancer - LC, Shopify merchants can significantly improve their visual merchandising, leading to higher conversion rates, stronger brand perception, and ultimately, increased sales.
 
 Don't let poor product images hold back your Shopify store's potential. Enhance your product catalog today and watch your performance metrics improve!

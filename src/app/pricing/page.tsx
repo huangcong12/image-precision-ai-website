@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Pricing | PhotoFixer & BG Remover - Shopify Image Enhancement',
-  description: 'Simple, transparent pay-per-use pricing for PhotoFixer & BG Remover. No subscriptions or hidden fees.',
+  title: 'Pricing | AI Product Image Enhancer - LC - Shopify Image Enhancement',
+  description: 'Simple, transparent pay-per-use pricing for AI Product Image Enhancer - LC. No subscriptions or hidden fees.',
   keywords: 'shopify image enhancement pricing, product image AI cost, background removal price, image optimization fees'
 };
 

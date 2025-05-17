@@ -1,15 +1,15 @@
 import {ReactCompareSlider, ReactCompareSliderImage} from "react-compare-slider";
 
 export const metadata = {
-    title: 'Features | PhotoFixer & BG Remover - Shopify Image Enhancement',
-    description: 'Learn how PhotoFixer & BG Remover enhances your Shopify product images with one-click enhancement, background removal, and bulk processing.',
+    title: 'Features | AI Product Image Enhancer - LC - Shopify Image Enhancement',
+    description: 'Learn how AI Product Image Enhancer - LC enhances your Shopify product images with one-click enhancement, background removal, and bulk processing.',
     keywords: 'product image enhancement, shopify background removal, ai image editor, bulk image processing, ecommerce photo editor'
 };
 
 export default function FeaturesPage() {
     return (
         <div className="container mx-auto px-4 py-12">
-            <h1 className="text-4xl font-bold mb-12 text-center text-shopify-primary">PhotoFixer & BG Remover
+            <h1 className="text-4xl font-bold mb-12 text-center text-shopify-primary">AI Product Image Enhancer - LC
                 Features</h1>
 
             <div className="max-w-4xl mx-auto space-y-16">
@@ -17,7 +17,7 @@ export default function FeaturesPage() {
                     <div>
                         <h2 className="text-2xl font-bold mb-4 text-shopify-primary">One-Click Image Enhancement</h2>
                         <p className="text-shopify-gray-dark mb-4">
-                            PhotoFixer & BG Remover uses advanced artificial intelligence to instantly enhance
+                            AI Product Image Enhancer - LC uses advanced artificial intelligence to instantly enhance
                             low-quality product images.
                             Whether you have low-resolution supplier photos or smartphone pictures, our AI can:
                         </p>

@@ -49,9 +49,9 @@ Clean, simple backgrounds typically result in smaller image file sizes, improvin
 
 ## Implementing AI Background Removal in Your Shopify Store
 
-### Using PhotoFixer & BG Remover for Shopify
+### Using AI Product Image Enhancer - LC for Shopify
 
-PhotoFixer & BG Remover offers a seamless integration with Shopify, allowing you to:
+AI Product Image Enhancer - LC offers a seamless integration with Shopify, allowing you to:
 
 1. **Process images in bulk** - Save time by removing backgrounds from multiple product images simultaneously
 2. **Maintain edge quality** - Our advanced AI preserves fine details like hair, fabric textures, and transparent elements
@@ -78,7 +78,7 @@ After implementing AI background removal, track these metrics to measure success
 
 ## Conclusion
 
-AI-powered background removal represents one of the most accessible ways to dramatically improve your Shopify store's visual appeal. By implementing this technology through tools like PhotoFixer & BG Remover, even small Shopify merchants can achieve professional-quality product images that compete with major retailers.
+AI-powered background removal represents one of the most accessible ways to dramatically improve your Shopify store's visual appeal. By implementing this technology through tools like AI Product Image Enhancer - LC, even small Shopify merchants can achieve professional-quality product images that compete with major retailers.
 
 The combination of improved aesthetics, faster page loads, and enhanced customer focus makes background removal a high-ROI investment for any serious Shopify store owner looking to increase conversions and build a stronger brand.
 

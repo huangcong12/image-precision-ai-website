@@ -111,7 +111,7 @@ export default async function Home() {
                 <div className="container mx-auto px-4 text-center">
                     <h2 className="text-3xl font-bold mb-6">Ready to Upgrade Your Product Images?</h2>
                     <p className="text-xl mb-10 max-w-3xl mx-auto">
-                        Install PhotoFixer & BG Remover today and get professional-quality product photos in seconds.
+                        Install AI Product Image Enhancer - LC today and get professional-quality product photos in seconds.
                     </p>
                     <a
                         href="https://apps.shopify.com/image-precision-ai"
